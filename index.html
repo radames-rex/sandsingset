@@ -2,8 +2,134 @@
 <html>
 	<head>
 		<title>SandSingSet! - Funny Music</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Keywords" content="game,music,sand,sing,set,song,DJ,easy,play">
+
+		<link rel="icon" href="_images/icons/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="_css/style.css">		
 	</head>
 	<body>
-		Start!
+		<div class="container">
+			
+			<header class="main-header">
+				<div class="main-logo"></div>
+				<div class="main-title">
+					<span>SandSingSet!</span> - Master Game of the DJs 4fun
+				</div>
+			</header><!-- /header -->
+
+			<nav class="main-nav">
+				<ul class="menu">
+					<li><a href=""><em>Start!</em></a></li>
+					<li><a href="">How to Play?</a></li>
+					<li>Creator
+						<hr><ul class="submenu-1">
+							<li><a href="">Channel</a></li>						
+							<li>Portfolio
+								<hr><ul class="submenu-2">
+									<li><a href="">WebSite</a></li>
+									<li>Curriculum
+										<hr><ul class="submenu-3">
+											<li><a href="">Lattes</a></li>
+											<li><a href="">LinkedIn</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="">Perfil</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav><!-- /nav -->
+			
+			<section class="sand-sing">
+				<div class="content">
+					<div class="title borda-container">Sand Sing</div>
+					<div class="sand borda-container">
+						<div id="slot-1" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-2" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-3" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-4" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-5" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-6" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-7" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-8" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-9" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div id="slot-10" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div class="compass borda-slot"></div>
+					</div>					
+				</div>
+			</section><!-- /sandsing -->
+
+			<aside class="sing-set">
+				<div class="content">
+					<div class="title borda-container">Sing Set</div>
+					<div class="set borda-container">
+						<div class="set-content">											
+							<div id="beat-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div class="set-title">Beats</div>
+						</div>
+						<div class="set-content">							
+							<div id="effect-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div class="set-title">Effects</div>
+						</div>
+						<div class="set-content">									
+							<div id="melody-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div class="set-title">Melodies</div>
+						</div>
+						<div class="set-content">									
+							<div id="voice-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div class="set-title">Voices</div>															
+						</div>					
+					</div>	
+				</div>
+			</aside><!-- /singset -->
+
+			<audio id="sound-beat-1" src="_sounds/b-boom.mp3" preload="none" none loop></audio>
+			<audio id="sound-beat-2" src="_sounds/b-kashi.mp3" preload="none" none loop></audio>
+			<audio id="sound-beat-3" src="_sounds/b-paomeu.mp3" preload="none" none loop></audio>
+			<audio id="sound-beat-4" src="_sounds/b-ptttpeu.mp3" preload="none" none loop></audio>
+			<audio id="sound-beat-5" src="_sounds/b-slupttt.mp3" preload="none" none loop></audio>
+			<audio id="sound-effect-1" src="_sounds/e-poulll.mp3" preload="none" none loop></audio>
+			<audio id="sound-effect-2" src="_sounds/e-rythm.mp3" preload="none" none loop></audio>
+			<audio id="sound-effect-3" src="_sounds/e-tucati.mp3" preload="none" none loop></audio>
+			<audio id="sound-effect-4" src="_sounds/e-tuilopta.mp3" preload="none" none loop></audio>
+			<audio id="sound-effect-5" src="_sounds/e-tumttt.mp3" preload="none" none loop></audio>
+			<audio id="sound-voice-1" src="_sounds/v-colors.mp3" preload="none" none loop></audio>
+			<audio id="sound-voice-2" src="_sounds/v-uare.mp3" preload="none" none loop></audio>
+			<audio id="sound-voice-3" src="_sounds/v-sunrise.mp3" preload="none" none loop></audio>
+			<audio id="sound-voice-4" src="_sounds/v-over.mp3" preload="none" none loop></audio>
+			<audio id="sound-voice-5" src="_sounds/v-ride.mp3" preload="none" none loop></audio>
+			<audio id="sound-melody-1" src="_sounds/m-clav.mp3" preload="none" none loop></audio>
+			<audio id="sound-melody-2" src="_sounds/m-nananana.mp3" preload="none" none loop></audio>
+			<audio id="sound-melody-3" src="_sounds/m-tatout.mp3" preload="none" none loop></audio>
+			<audio id="sound-melody-4" src="_sounds/m-tvutvutvu.mp3" preload="none" none loop></audio>
+			<audio id="sound-melody-5" src="_sounds/m-oaaaah.mp3" preload="none" none loop></audio>
+
+			<footer class="main-footer">
+				<code>&copy; 2016 <span>SandSingSet!</span> Todos os direitos reservados. Powered By: Rádames D Santiago <span>(@dev_sandman)</span></code>
+			</footer><!-- /footer -->
+
+			<!-- Scripts -->
+			<script src="_js/application.js" async defer></script>
+		</div>	
 	</body>
 </html>

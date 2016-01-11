@@ -1,0 +1,318 @@
+/*
+* #.# Base
+*/
+
+	/*
+	* CSS Reset
+	*
+	* Simples e Básico / Basic and Simple
+	*/
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+		vertical-align:baseline;
+		text-decoration: none;
+	}
+	/*-------------------------*/
+
+	.container{
+		background-color: #fff;
+	}
+
+	a{
+		color:#fff;
+	}
+
+	li{
+		margin: 0 1% 0 1%;
+		width: 12%;
+		position: relative;
+		float: left;
+		font: 1em unibody;
+		background-color: #ffa500;
+		color: #fff;
+		transition: all 0.6s ease;
+	}	
+
+	hr, 
+		hr + ul{
+			display: none;
+			position:absolute;		
+	}
+
+/*
+* #.# Layouts
+*/
+
+	.main-header{
+		height: 10%;
+		width: 100%;
+		display: table;
+		background-color: #fff;
+	}
+
+	.main-nav{
+		height: 2%;
+		width: 100%;
+		display: table;
+		text-align: center;
+		background-color: #ffa500;
+	}
+
+	.sand-sing{
+		background-color: #e0ffff;
+	}
+
+	.sing-set{
+		background-color: #f5deb3;
+	}
+
+	.main-footer{
+		height: 1%;
+		text-align: center;
+		color: #fff;
+		background-color: #696969;
+	}
+
+/*
+* #.# Modules
+*/
+
+	.main-logo{
+		margin: 1.5% 3% 1% 3%;
+		height: 5em;/*Porque só funcionar com em e não com %?*/
+		width: 5em;/*Porque só funcionar com em e não com %?*/
+		float: left;
+		background-size: 100% 100%;		
+		background-repeat: no-repeat;
+		background-image: url(../_images/icons/logo.jpg);				
+	}
+
+	.main-title{
+		margin: 3.5% 0 0 0;
+		width: 100%;
+		font: 1.5em unibody;		
+	}
+
+	/*
+	*	Menu Dropdown
+	*
+	*	Horizontal com 4 níveis / Horizontal with 4 levels
+	*/
+	.menu{
+		height:30%; 
+		width:100%;		
+	}	
+
+	.submenu-2, 
+		.submenu-3{
+			top:0;
+			left:100%;
+	}
+
+		.submenu-1 li, 
+			.submenu-2 li, 
+				.submenu-3 li{
+					margin: 0;
+					width: 100%;
+		}	
+	/* Por que o menu vai diminuindo de tamanho?*/
+	/*------------------------*/
+
+	.content{
+		padding: 0.5% 3% 0.5% 3%;
+		display: block;		
+	}
+
+	.title{
+		width: 100%;
+		height: 10%;
+		padding: 1%;	
+		display: table;					
+		font: 0.8em unibody;
+	}
+
+	.sand{
+		width: 100%;
+		padding: 1%;	
+		display: table;					
+		font: 0.8em unibody;
+	}
+
+	.slot{
+		margin: 0 0.3% 0 0.3%;
+		width: 6.05%;
+		height: 12em;
+		display: block;
+		padding: 1.5%;
+		float: left;	
+	}
+
+	.compass{
+		margin:16% 0.3% 0% 0.3%;
+		height: 2em;
+		width: 98.68%;
+		padding: 0.4% 0 0.4% 0;
+		clear: both;
+	}
+
+	.set{
+		width: 100%;
+		padding: 1%;	
+		display: table;					
+		font: 0.8em unibody;		
+	}
+
+	.set-content{
+		float: left;
+	}
+
+	.set-title{
+		width: 100%;	
+		display: table;					
+		font: 0.8em unibody;				
+	}
+
+	.sing{
+		margin: 0 1% 0 0;
+		width: 2.5em;
+		height: 4em;
+		display: block;
+		padding: 1.5%;
+		float: left;	
+		background-size: 100% 100%;
+		background-repeat: no-repeat;	
+	}
+
+		.set-content:nth-child(1) .sing:nth-child(1){
+			background-image: url(../_images/sprites/beat-1.png);			
+		}
+		.set-content:nth-child(1) .sing:nth-child(2){
+			background-image: url(../_images/sprites/beat-2.png);
+		}
+		.set-content:nth-child(1) .sing:nth-child(3){
+			background-image: url(../_images/sprites/beat-3.png);
+		}
+		.set-content:nth-child(1) .sing:nth-child(4){
+			background-image: url(../_images/sprites/beat-4.png);
+		}
+		.set-content:nth-child(1) .sing:nth-child(5){
+			background-image: url(../_images/sprites/beat-5.png);
+		}
+
+		.set-content:nth-child(2) .sing:nth-child(1){
+			background-image: url(../_images/sprites/beat-6.png);
+		}
+		.set-content:nth-child(2) .sing:nth-child(2){
+			background-image: url(../_images/sprites/beat-7.png);
+		}
+		.set-content:nth-child(2) .sing:nth-child(3){
+			background-image: url(../_images/sprites/beat-8.png);
+		}
+		.set-content:nth-child(2) .sing:nth-child(4){
+			background-image: url(../_images/sprites/beat-9.png);
+		}
+		.set-content:nth-child(2) .sing:nth-child(5){
+			background-image: url(../_images/sprites/beat-10.png);
+		}
+
+		.set-content:nth-child(3) .sing:nth-child(1){
+			background-image: url(../_images/sprites/beat-11.png);
+		}
+		.set-content:nth-child(3) .sing:nth-child(2){
+			background-image: url(../_images/sprites/beat-12.png);
+		}
+		.set-content:nth-child(3) .sing:nth-child(3){
+			background-image: url(../_images/sprites/beat-13.png);
+		}
+		.set-content:nth-child(3) .sing:nth-child(4){
+			background-image: url(../_images/sprites/beat-14.png);
+		}
+		.set-content:nth-child(3) .sing:nth-child(5){
+			background-image: url(../_images/sprites/beat-15.png);
+		}
+
+		.set-content:nth-child(4) .sing:nth-child(1){
+			background-image: url(../_images/sprites/beat-16.png);
+		}
+		.set-content:nth-child(4) .sing:nth-child(2){
+			background-image: url(../_images/sprites/beat-17.png);
+		}
+		.set-content:nth-child(4) .sing:nth-child(3){
+			background-image: url(../_images/sprites/beat-18.png);
+		}
+		.set-content:nth-child(4) .sing:nth-child(4){
+			background-image: url(../_images/sprites/beat-19.png);
+		}
+		.set-content:nth-child(4) .sing:nth-child(5){
+			background-image: url(../_images/sprites/beat-20.png);
+		}				
+	.main-footer span:nth-child(1){
+		font: 0.6em unibody;
+	}
+
+	.main-footer span:nth-child(2){
+		font-family: riesling;
+	}
+/*
+* #.# States
+*/
+
+	a:hover{
+		color: #ffa500;
+	}
+
+	li:hover{
+		background-color: #fff;
+		color: #ffa500;
+		transition: all 0.6s ease;
+	}
+
+	.menu li:hover .submenu-1,
+		.submenu-1 li:hover .submenu-2 ,
+			.submenu-2 li:hover .submenu-3{
+				display: block;
+	}
+
+	.opaco{
+		opacity:0.45;
+		-moz-opacity: 0.45;
+		filter: alpha(opacity=45);
+	}
+
+/*
+* #.# Themes
+*/
+
+	.warning{
+		background-color: red;
+	}
+	
+	.borda-slot{
+		border: 2px dotted #696969;	
+	}
+
+	.borda-container{
+		-webkit-border-image: url(../_images/border.png) 30 stretch;
+    	-o-border-image: url(../_images/border.png) 30 stretch;
+    	border-image: url(../_images/border.png) 30 stretch;
+	}
+
+/*
+* #.# Utilities
+*/
+
+	@font-face{
+		font-family: unibody;
+		src: url(../_fonts/unibody-8.otf);
+	}
+
+	@font-face{
+		font-family: riesling;
+		src: url(../_fonts/riesling.ttf);
+	}
+
+/*
+* #.# Shame
+*/
