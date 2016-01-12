@@ -58,7 +58,7 @@
 						<div id="slot-8" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 						<div id="slot-9" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 						<div id="slot-10" class="slot borda-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-						<div class="compass borda-slot"></div>
+						<div id="#compass" class="compass borda-slot"></div>						
 					</div>					
 				</div>
 			</section><!-- /sandsing -->
@@ -68,35 +68,35 @@
 					<div class="title borda-container">Sing Set</div>
 					<div class="set borda-container">
 						<div class="set-content">											
-							<div id="beat-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="beat-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="beat-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="beat-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="beat-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-1" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-2" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-3" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-4" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="beat-5" data-timebar="500"  class="sing" draggable="true" ondragstart="drag(event)"></div>
 							<div class="set-title">Beats</div>
 						</div>
 						<div class="set-content">							
-							<div id="effect-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="effect-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="effect-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="effect-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="effect-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-1" data-timebar="800" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-2" data-timebar="3400" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-3" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-4" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="effect-5" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
 							<div class="set-title">Effects</div>
 						</div>
 						<div class="set-content">									
-							<div id="melody-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="melody-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="melody-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="melody-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="melody-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-1" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-2" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-3" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-4" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="melody-5" data-timebar="500" class="sing" draggable="true" ondragstart="drag(event)"></div>
 							<div class="set-title">Melodies</div>
 						</div>
 						<div class="set-content">									
-							<div id="voice-1" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="voice-2" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="voice-3" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="voice-4" class="sing" draggable="true" ondragstart="drag(event)"></div>
-							<div id="voice-5" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-1" data-timebar="2500" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-2" data-timebar="500" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-3" data-timebar="1000" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-4" data-timebar="1000" class="sing" draggable="true" ondragstart="drag(event)"></div>
+							<div id="voice-5" data-timebar="0" class="sing" draggable="true" ondragstart="drag(event)"></div>
 							<div class="set-title">Voices</div>															
 						</div>					
 					</div>	
@@ -133,7 +133,8 @@
 			</footer><!-- /footer -->
 
 			<!-- Scripts -->
-			<script src="_js/application.js" async defer></script>
+			<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+			<script src="_js/application.js" async defer></script>			
 		</div>	
 	</body>
 </html>
