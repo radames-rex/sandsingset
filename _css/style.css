@@ -299,6 +299,32 @@
     	border-image: url(../_images/border.png) 30 stretch;
 	}
 
+	.anime{ 
+		background-size:100% 100%;
+		background-repeat: no-repeat;		 
+	}
+
+	.anime-beat-1{ background-image: url(../_images/sprites/b-1.gif);}
+	.anime-beat-2{ background-image: url(../_images/sprites/b-2.gif);}
+	.anime-beat-3{ background-image: url(../_images/sprites/b-3.gif);}
+	.anime-beat-4{ background-image: url(../_images/sprites/b-4.gif);}
+	.anime-beat-5{ background-image: url(../_images/sprites/b-5.gif);}
+	.anime-effect-1{ background-image: url(../_images/sprites/e-1.gif);}
+	.anime-effect-2{ background-image: url(../_images/sprites/e-2.gif);}
+	.anime-effect-3{ background-image: url(../_images/sprites/e-3.gif);}	
+	.anime-effect-4{ background-image: url(../_images/sprites/e-4.gif);}
+	.anime-effect-5{ background-image: url(../_images/sprites/e-5.gif);}
+	.anime-melody-1{ background-image: url(../_images/sprites/m-1.gif);}
+	.anime-melody-2{ background-image: url(../_images/sprites/m-2.gif);}
+	.anime-melody-3{ background-image: url(../_images/sprites/m-3.gif);}
+	.anime-melody-4{ background-image: url(../_images/sprites/m-4.gif);}
+	.anime-melody-5{ background-image: url(../_images/sprites/m-5.gif);}
+	.anime-voice-1{ background-image: url(../_images/sprites/v-1.gif);}
+	.anime-voice-2{ background-image: url(../_images/sprites/v-2.gif);}
+	.anime-voice-3{ background-image: url(../_images/sprites/v-3.gif);}
+	.anime-voice-4{ background-image: url(../_images/sprites/v-4.gif);}
+	.anime-voice-5{ background-image: url(../_images/sprites/v-5.gif);}
+
 /*
 * #.# Utilities
 */
