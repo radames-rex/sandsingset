@@ -1,0 +1,21 @@
+{
+  "name": "SandSingSet!",
+  "description": "Jogo de criação de música com adições interativas",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "sand",
+    "sing",
+    "set",
+    "sound",
+    "music",
+    "DJ"
+  ],
+  "authors": [
+    "Dev SanDMan"
+  ],
+  "license": "MIT",
+  "homepage": "http://sandsingset.com.br",
+  "private": true,
+  "dependencies": {}
+}

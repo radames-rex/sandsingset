@@ -41,7 +41,7 @@ for(var i=0;i<10;i++){
 				.attr("id","svgslot-"+(i+1))
 				.attr("height",height)
 				.attr("width",width)
-				.style("margin","0 1.1% 0 0.5%")
+				.style("margin","0 1.1% 0 0.5%");
 
 } 		
 
@@ -50,7 +50,7 @@ function createTimeBars(id,delay){
 	var canva = d3.select("svg#svg"+id);
 	var heightScale = d3.scale.linear()
 						.domain([0,10])
-						.range([0, height])
+						.range([0, height]);
 
 	var bar = canva.selectAll("rect")
 					.data(dataArray)
@@ -60,23 +60,26 @@ function createTimeBars(id,delay){
 						.attr("width",8)
 						.attr("fill","#000")
 						.attr("x", function(d,i){return (i*10)+3;})	
-						.attr("fill","red")		
+						.attr("fill","red");		
 
 	var duration = (8000-delay)/24;
 
 	var animation = bar.transition()
 							.delay(delay)
 							.duration(duration)
-							.attr("height",function(d){return heightScale(d);})								
+							.attr("height",function(d){return heightScale(d);});								
 
+	function randomScale(){
+		return function(d){return heightScale(d)*Math.random();};
+	}
 
 	for(var i=0;i<124;i++){
 		animation = animation.transition()
 						.duration(duration)
-						.attr("height",function(d){return heightScale(d)*Math.random();})
+						.attr("height",randomScale());
 	}					
 
-	animation.attr("height",function(d){return 0;})		
+	animation.attr("height",function(d){return 0;});		
 }	
 
 	
